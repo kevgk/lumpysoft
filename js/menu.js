@@ -4,21 +4,13 @@ const dropDownItem = document.querySelectorAll('#dropdown-menu li');
 const searchButton = document.querySelector('#search-button');
 const searchBox = document.querySelector('#search-box');
 
-window.addEventListener('resize', () => {    
-	if (window.innerWidth <= 750) {	
-		searchButton.innerHTML = 'Search <i class="fal fa-search">';
-	} else {
-    searchButton.innerHTML = '<i class="fal fa-search">';
-  }
-});
-
 document.addEventListener('DOMContentLoaded', () => {
   dropDownButton.addEventListener('click', () => dropDownMenu.style.display = 'block');
 
   dropDownItem.forEach(item => {
     item.addEventListener('click', () => {
       let { value } = item.attributes.value;
-      dropDownButton.innerHTML = `${item.innerText} <i class="fal fa-${value}">`;
+      dropDownButton.innerText = item.innerText;
       dropDownMenu.style.display = 'none';
     });
   });
