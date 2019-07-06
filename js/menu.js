@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   dropDownItem.forEach(item => {
     item.addEventListener('click', () => {
-      let { value } = item.attributes.value;
       dropDownButton.innerText = item.innerText;
       dropDownMenu.style.display = 'none';
     });
