@@ -53,12 +53,7 @@ li:nth-last-child(2) {
     padding: 0px;
     width: 100%;
 }
-.fa-angle-down, .fa-tv-retro, .fa-headphones, .fa-book, .fa-images, .fa-gamepad, .fa-file-archive {
-    float: right;
-    margin: 0 auto;
-    text-align: center;
-    padding-right: 5px;
-}z
+
 #search-box {
         /* Decorations */
         background: #ddd;
