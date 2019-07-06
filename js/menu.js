@@ -1,6 +1,6 @@
-const button = document.querySelector('#dropdown-button');
-const subMenu = document.querySelector('#dropdown-menu');
-const subMenuItem = document.querySelectorAll('#dropdown-menu li');
+const dropDownButton = document.querySelector('#dropdown-button');
+const dropDownMenu = document.querySelector('#dropdown-menu');
+const dropDownItem = document.querySelectorAll('#dropdown-menu li');
 const searchButton = document.querySelector('#search-button');
 const searchBox = document.querySelector('#search-box');
 
@@ -13,13 +13,13 @@ window.addEventListener('resize', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  button.addEventListener('click', () => subMenu.style.display = 'block');
+  dropDownButton.addEventListener('click', () => dropDownMenu.style.display = 'block');
 
-  subMenuItem.forEach(item => {
+  dropDownItem.forEach(item => {
     item.addEventListener('click', () => {
       let { value } = item.attributes.value;
-      button.innerHTML = `${item.innerText} <i class="fal fa-${value}">`;
-      subMenu.style.display = 'none';
+      dropDownButton.innerHTML = `${item.innerText} <i class="fal fa-${value}">`;
+      dropDownMenu.style.display = 'none';
     });
   });
   
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function search() {
-	let type = button.innerText;
+	let type = dropDownButton.innerText;
   let query = searchBox.value;
   let commonToAll = `
     -inurl:(jsp|pl|php|html|aspx|htm|cf|shtml)
