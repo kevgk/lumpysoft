@@ -119,7 +119,8 @@ li:nth-last-child(2) {
 
     li {
         padding: 10px;
-        width: 150px;
+        width: 200px;
+        box-sizing: border-box;
     }
 
     li:nth-last-child(1) {
