@@ -121,6 +121,7 @@ li:nth-last-child(2) {
         padding: 10px;
         width: 200px;
         box-sizing: border-box;
+        cursor: pointer;
     }
 
     li:nth-last-child(1) {
