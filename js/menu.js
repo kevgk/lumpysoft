@@ -27,8 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keyup', e => {
     if (e.which == 13) search();
   });
-
-  searchBox.focus();
 });
 
 function search() {
