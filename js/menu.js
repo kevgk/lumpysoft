@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function search() {
-	// let type = dropDownButton.value;
   let query = searchBox.value;
   let commonToAll = `
     -inurl:(jsp|pl|php|html|aspx|htm|cf|shtml)
